@@ -1,0 +1,201 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script type="text/javascript" src="jquery-1.9.1.js"></script>
+<script type="text/javascript" src="extend.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="hw.css" rel="stylesheet" type="text/css" />
+    <title>FUCK</title>
+
+</head>
+<body><center>
+
+<!--软件功能介绍-->
+<div class="intro">
+<!--logo和按钮导航-->
+<div class="topnav">
+    <div class="logo">
+        <div class="pic"></div>
+        <span class="text_e">Remote Mouse</span>
+        <span class="text_c">电脑遥控尽在掌握</span>
+    </div>
+    <ul class="buttons">
+        <li onmouseover="showSubMenu(this)" onmouseout="hideSubMenu(this)" >
+            <a class="button" href="#" title="功能特色" >功能特色</a>
+            <ul class="hide">
+                <li><a class="button" href="#" >功能1</a></li>
+                <li><a class="button" href="#" >功能2</a></li>
+                <li><a class="button" href="#" >功能3</a></li>
+            </ul>
+        </li>
+        <li><a class="button" href="#" title="如何开始" onclick="addBlock_Begin()">如何开始</a></li>
+        <li onmouseover="showSubMenu(this)" onmouseout="hideSubMenu(this)" >
+            <a class="button" href="#" title="常见问题" >常见问题</a>
+            <ul class="hide" >
+                <li><a class="button" href="#" >电脑无响应</a></li>
+                <li><a class="button" href="#" >兼容性问题</a></li>
+                <li><a class="button" href="#" >语音助手怎么用</a></li>
+                <li><a class="button" href="#" >更多问题</a></li>
+            </ul>
+        </li>
+        <li><a class="button" href="javascript:void(0)" onclick="addBlock_joinUs()" title="加入团队">加入团队</a></li>
+    </ul>
+</div>
+<!--end of logo和按钮导航-->
+
+<span style="color:#ffffff;  font-size:40px;
+position:relative;  top:160px;    left:179px;
+text-align:left;    display:block">将你的手机或平板电脑变<br>成一套好用的无线遥控<br>器，远程控制你的电脑。</span>
+<p>
+    <a class="downbot" style="position:relative;top:175px;left:-313px;background:url(res/download_button.png);" href="javascript:void" title="立刻下载" onclick="openDownloadWindows()">立刻下载</a>
+</p>
+
+
+<div class="share">
+    <span class="text">分享到：</span>
+        <table cellspacing="1.8" class="buttons">
+            <tr>
+                <td><a class="button" style="background-position:top 0px" href="###" title="分享到xx"></a></td>
+                <td><a class="button" style="background-position:top 0px" href="###" title="分享到yy"></a></td>
+                <td><a class="button" style="background-position:top 0px" href="###" title="分享到zz"></a></td>
+                <td><a class="button" style="background-position:top 0px" href="###" title="分享到aa"></a></td>
+                <td><a class="button" style="background-position:top 0px" href="###" title="分享到bb"></a></td>
+                <td><a class="button" style="background-position:top 0px" href="###" title="分享到cc"></a></td>
+            </tr>
+        </table>
+</div>
+<span class="cellphone_logo"></span>
+</div>
+<!--end of 软件功能介绍-->
+
+<div id="swapButton">
+<!--
+    --><p id="swapSelected" 
+                onmouseover="playCycleStuckAt(1)" onmouseout="setTimeout('rescumePlayCycle()',1000)">&nbsp1&nbsp</p><!--
+    --><p id="" onmouseover="playCycleStuckAt(2)" onmouseout="setTimeout('rescumePlayCycle()',1000)">&nbsp2&nbsp</p><!--
+    --><p id="" onmouseover="playCycleStuckAt(3)" onmouseout="setTimeout('rescumePlayCycle()',1000)">&nbsp3&nbsp</p><!--
+    --><p id="" onmouseover="playCycleStuckAt(4)" onmouseout="setTimeout('rescumePlayCycle()',1000)">&nbsp4&nbsp</p>
+</div>
+
+<!--软件特性介绍：完美模拟鼠标键盘-->
+<div class="func1">
+    <span class="pic"></span>
+    <span class="func_intro" style="top:-348px;left:472px">完美模拟的鼠标、键盘<br>和触控板</span>
+    <span class="func_intro_text" style="top:-216px;left:68px">将最常用的三件遥控设备完美合一。熟悉<br>的滑动和点击，更加智能的多指触摸，远<br>程操控电脑，一切都是如此简单。</span>
+    <a class="down_global" href="#$" style="top:-154px;left:260px"></a>
+</div>
+<!--end of 软件特性介绍：完美模拟鼠标键盘-->
+
+<!--软件特性介绍：遥控面板-->
+<div class="func2 hide">
+    <span class="pic"></span>
+    <span class="func_intro" style="top:-522px;left:-93px">更易用的遥控面板</span>
+    <span class="func_intro_text" style="top:-328px;left:-417.8px">让你能用最便捷的方式进行各项操作，无论是窝在<br>床上看视频，抑或是在客厅听音乐，甚至是在会议<br>厅里做演讲展示，Remote Mouse都可以满足你<br>的需求。</span>
+    <a class="down_global" href="#$" style="top:-280px;left:-260px"></a>
+</div>
+<!--end of 软件特性介绍：遥控面板-->
+
+<!--软件特性介绍：远程图像传输-->
+<div class="func3 hide">
+    <span class="pic"></span>
+    <span class="func_intro" style="top:-415px;left:494px">远程图像传输</span>
+    <span class="ios_notify_text" style="top:-416px;left:494px">（仅iOS）</span>
+    <span class="func_intro_text" style="top:-258px;left:106px">无需同步就能直接浏览和使用电脑中的图片。也<br>可以秒速上传你的手机照片到电脑，备份和珍藏<br>心爱的照片，只需几秒。</span>
+    <a class="down_global" href="#$" style="top:-193px;left:280px"></a>
+</div>
+<!--end of 软件特性介绍：远程图像传输-->
+
+<!--软件特性介绍：其他贴心功能-->
+<div class="morefuncs hide">
+    <span class="func_intro" style="top:25px;text-align:center;">其他贴心功能</span>
+        <table>
+            <tr>
+                <td>
+                    <span class="pic" style="background:url(res/sweet_1.png);left:-60px"></span>
+                </td>
+                <td>
+                    <span class="pic" style="background:url(res/sweet_2.png);left:0px"></span>
+                </td>
+                <td>
+                    <span class="pic" style="background:url(res/sweet_3.png);left:60px;background-size:85%;background-repeat: no-repeat;"></span>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-top:40px">
+                    <span class="ios_notify_text">语音输入（仅iOS）<br>让嘴巴替你打字，记录和分享<br>想法从未如此快捷</span>
+                </td>
+                <td style="padding-top:40px">
+                    <span class="ios_notify_text" style="left:20px">挥动控制（仅iOS）<br>轻挥手机移动鼠标，更适合手持<br>使用状态，如Wiimote般有趣的<br>使用体验。</span>
+                </td>
+                <td style="padding-top:40px">
+                    <span class="ios_notify_text" style="left:56px">远程关机<br>关机、重启，休眠和注销。看完<br>视频该休息了，只需多按一下</span>
+                </td>
+            </tr>
+        </table>
+        <a class="down_global" href="#$" style="top:65px"></a>
+</div>
+<!--end of 软件特性介绍：其他贴心功能-->
+
+<!--小伙伴评价-->
+<div class="opinions">
+    <span class="func_intro" style="text-align:center;top:30px">小伙伴们这样说</span>
+    <span class="pic"></span>
+</div>
+<!--end of 小伙伴评价-->
+
+<!--心动了吗/下载-->
+<div class="download">
+    <span style="color:#ffffff;  font-size:40px;
+position:relative;  top:110px;   text-align:center;    display:block">心动了吗？</span>
+    <a class="downbot" style="position:relative;top:140px;left:-15px" href="javascript:void" title="立刻下载" onclick="openDownloadWindows()">立刻下载</a>
+</div>
+<!--end of 心动了吗/下载-->
+
+<!--底部导航/facebook，google，youtube-->
+<div class="footer">
+    <div class="bottom_nav">
+        <table cellspacing="25">
+            <tr style="padding:200px 300px">
+                <td><a class="button" href="##c#" title="客户支持">客户支持</a></td>
+                <td><a class="button" href="##c#" title="天使用户论坛">天使用户论坛</a></td>
+                <td><a class="button" href="##c#" title="帮助我们翻译">帮助我们翻译</a></td>
+                <td><a class="button" href="##c#" title="联络我们">联络我们</a></td>
+            </tr>
+        </table>
+    </div>
+    <div class="lang_select">
+        <table cellspacing="15">
+            <tr>
+                <td><a class="button" href="##c#" title="English">English</a></td>
+                <td><a class="button" href="##c#" title="Español">Español</a></td>
+                <td><a class="button" href="##c#" title="Italiano">Italiano</a></td>
+                <td><a class="button" style="font-color:#4eb211;" href="##c#" title="简体中文">简体中文</a></td>
+                <td><a class="button" href="##c#" title="繁体中文">繁体中文</a></td>
+                <td><a class="button" href="##c#" title="日本語">日本語</a></td>
+            </tr>
+        </table>
+    </div>
+    <div class="share">
+        <table cellspacing="20">
+            <tr>
+                <td>
+                    <a href="##$#1" class="button" style="background:url(res/facebook.png);left:0px"></a>
+                </td>
+                <td>
+                    <a href="##$#2" class="button" style="background:url(res/google.png);left:0px"></a>
+                </td>
+                <td>
+                    <a href="##$#3" class="button" style="background:url(res/youtube.png);left:0px"></a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <span class="trademark">®Remote Mouse</span>
+</div>
+<!--end of 底部导航/facebook，google，youtube-->
+
+</center></body>
+</html>
+<!--
+客户支持|天使用户论坛|帮助我们翻译|联络我们
+English Español Italiano 简体中文 繁体中文 日本語-->

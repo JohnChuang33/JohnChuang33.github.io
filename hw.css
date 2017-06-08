@@ -1,0 +1,338 @@
+/*公共元素*/
+.button{
+    text-decoration: none;
+    font-family:"Microsoft Yahei";
+    color:white;
+}
+.downbot{
+    text-decoration: none;
+    font-family:"Microsoft Yahei";
+    color:white;
+    width: 295px;
+    height: 71px;
+    font-size: 30px;
+    line-height: 62px;
+    padding: 13px 63px 18.2px 112px;
+    background:url(res/download_button.png);
+}
+.pic{
+    background-repeat: no-repeat;
+    display:block;
+    position:relative;
+}
+.func_intro{
+    color:#51b310;
+    font-size:40px;
+    text-align:left;
+    display:inline-block;
+    position:relative;
+}
+.func_intro_text{
+    color:#787878;
+    font-size:20px;
+    text-align:left;
+    display:inline-block;
+    position:relative;
+    line-height:2em;
+}
+.ios_notify_text{
+    color:#767676;
+    font-size:30px;
+    font-family: "Microsoft-Yahei";
+    text-align:left;
+    display:inline-block;
+    position:relative;
+    line-height:2em;
+}
+.down_global{
+    background-repeat: no-repeat;
+    display:block;
+    position:relative;
+    background:url(res/down.png);
+    width:25px;
+    height:34px;
+}
+/*顶部的logo和导航*/
+.topnav{
+    /*background-color: silver;*/
+    width: 1280px;
+    height: 42px;
+    margin-top: 22px;
+    position:absolute;
+}
+.topnav .logo{
+    width: 219px;
+    height: 42px;
+    margin-left: 125px;
+    position:absolute;
+    color:#fdfeff;
+}
+.topnav .logo .pic{
+    position:absolute;
+    background-color:black;
+    width:42px;
+    height:42px;
+    background:url(res/logo.png);
+}
+.topnav .logo .text_c{
+    font-family:"Microsoft-Yahei";
+    position:absolute;
+    font-size:13.6px;
+    font-weight:100;
+    top:24px;
+    left:56px;
+}
+.topnav .logo .text_e{
+    font-family:"Arial Black","Microsoft-Yahei";
+    position:absolute;
+    font-size:20px;
+    top:-4px;
+    left:55px;
+}
+/*顶部的导航*/
+.topnav .buttons{
+    right:94px;
+    margin-top: 10px;
+    position:absolute;
+}
+.topnav .buttons .hide{
+    display: none;
+    margin:5px -50px;
+    /*padding:0px 0px;*/
+}
+.topnav .buttons li{
+    float:left;
+    list-style: none;
+    /*margin:0 10 0 0;*/
+}
+.topnav .buttons li ul li{
+    float:none;
+    position:relative;
+    left:-20px;
+    padding:8px 0px;
+    z-index:10;
+    list-style: none;
+    list-style-type: none;
+    background-color: rgba(153,153,153,0.23);
+}
+.topnav .buttons .button{
+    margin:45px;
+    font-size:16px;
+}
+.topnav .buttons .button:hover{ color:#4eb211;}
+/*软件功能介绍*/
+.intro{
+    background: url("res/BG_04.jpg");
+    background-position: -100px 0px;
+    width: 1280px;
+    height: 620px;
+}
+.intro .cellphone_logo{
+    background:url(res/mobile_iphone.png);
+    width:363px;
+    height:511px;
+    display:block;
+    z-index: 1;
+    position:absolute;
+    top:12.2%;left:55%;
+}
+.intro .share{
+    /*background-color: black;*/
+    width:176px;
+    height:16px;
+    position:relative;
+    top:260px;left:-372.5px
+}
+.intro .share .text{
+    color:white;
+    font-size:12px;
+    position:absolute;
+    top:0px;
+    left: 0px;
+}
+.intro .share .buttons{
+    background:url(res/share_logo.png);
+    background-repeat: no-repeat;
+    position:absolute;
+    left:48px;
+    top:1px;
+    width:130px;
+    height:16px;
+}
+.intro .share .buttons .button{ 
+    padding:0px 7px;
+    /*background:pink;*/
+}
+#swapButton{
+    position:absolute;
+    width:200px;height:20px;
+    top:640px;
+    left:15.6%;
+}
+#swapButton p{
+    display:inline;
+    background-color: #ccc;
+    border:1px solid red;
+    margin: 0px 10px;
+    font-size:8px;
+    z-index: 15;
+}
+#swapButton #swapSelected{
+    background-color: #fff;
+}
+.hide{
+    display:none;
+}
+/*软件特性介绍：完美模拟鼠标键盘*/
+.func1{
+    background:url(res/BG_01.png);
+    width: 1280px;
+    height: 617px;
+}
+.func1 .pic{
+    background:url(res/perfect.png);
+    width:594px;
+    height:477px;
+    top:45px;
+    left:-276px;
+}
+/*软件特性介绍：遥控面板*/
+.func2{
+    background:url(res/BG_02.png);
+    width: 1280px;
+    height: 671px;
+}
+.func2 .pic{
+    background:url(res/easier.png);
+    width:494px;
+    height:590px;
+    top:43px;
+    left:280px;
+}
+
+/*软件特性介绍：远程图像传输*/
+.func3{
+    background:url(res/BG_01.png);
+    /*background-color: green;*/
+    width: 1280px;
+    height: 698px;
+}
+.func3 .pic{
+    background:url(res/remote.png);
+    width:587px;
+    height:568px;
+    top:45px;
+    left:-238px;
+}
+
+/*软件特性介绍：其他贴心功能*/
+.morefuncs{
+    background:url(res/BG_02.png);
+    width: 1280px;
+    height: 551px;
+}
+.morefuncs .pic{
+    width: 300px;
+    height: 200px;
+    top:60px;
+}
+.morefuncs .ios_notify_text{
+    font-size:18px;
+    text-align: center;
+    font-weight: 500;
+    line-height:1.7em;
+}
+
+/*小伙伴评价*/
+.opinions{
+    background: url("res/BG_01.png");
+    width: 1280px;
+    height: 601px;
+    border-top:1px solid black;
+}
+.opinions .pic{
+    background: url("res/comment.png");
+    margin-top: 40px;
+    width: 1263px;
+    height: 488px;
+}
+
+/*心动了吗/下载*/
+.download{
+    background: url("res/BG_04.jpg");
+    background-position: -170px -190px;
+    background-repeat:no-repeat;
+    width: 1280px;
+    height: 363px;
+}
+
+/*底部导航/facebook，google，youtube*/
+.footer{
+    background: url("res/BG_03.png");
+    width: 1280px;
+    height: 172px;
+    position:relative;
+}
+.footer .bottom_nav{
+    /*background:red;*/
+    display: inline-block;
+    position:absolute;
+    top:35px;
+    left: 103px;
+}
+.footer .bottom_nav .button{
+    font-size: 12px;
+    color:#dcdcdc;
+    margin:;
+}
+.footer .lang_select{
+    /*background:green;*/
+    display: inline-block;
+    position:absolute;
+    top:70px;
+    left: 113px;
+}
+.footer .lang_select .button{
+    font-size: 12px;
+    color:#5b5b5b;
+}
+.footer .lang_select .button:hover{ color:#4eb211;}
+.footer .share{
+    /*background:pink;*/
+    /*display: inline-block;*/
+    position:absolute;
+    top:65px;
+    left: 1032px;
+}
+.footer .share .button{
+    width: 31px;
+    height: 40px;
+    padding:10px 15px;
+    background-repeat: no-repeat;
+}
+.footer .trademark{
+    font-weight: bold;
+    font-size:12px;
+    position:relative;
+    top:80px;
+    text-shadow: 0px 2px 0px #4d4b4c;
+}
+#mask{
+    position:absolute;
+    z-index:15;
+    top:0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.5);
+}
+#joinUs{
+    position:fixed;
+    z-index:16;
+    left:36%;
+    top:35%;
+}
+#beginWith{
+    position:fixed;
+    z-index:16;
+    left:46%;
+    top:40%;
+}
